@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Animal {
     private String nome;
@@ -18,16 +19,24 @@ public class Animal {
         this.nomeDono = nomeDono;
 
     }
-//    public Animal(){
-//
-//    }
+    public Animal(){
 
-    public List<Animal> cadastroAnimal( Animal animal1){
-        List<Animal> listaAnimal = new ArrayList<>();
-        listaAnimal.add(animal1);
+    }
 
-        return listaAnimal;
 
+
+    public void procurarAnimal(String nomeDono, String nomeAnimal, List<Animal> listaAnimalGeral){
+        for (int i = 0; i < listaAnimalGeral.size(); i++) {
+            if (nomeAnimal.equals( listaAnimalGeral.get(i).getNome()) && nomeDono.equals(listaAnimalGeral.get(i).getNomeDono())) {
+
+                System.out.println("Nome do Animal: "+listaAnimalGeral.get(i).getNome());
+                System.out.println("Idade: "+listaAnimalGeral.get(i).getIdade());
+                System.out.println("Tipo: " +listaAnimalGeral.get(i).getTipo());
+                System.out.println("Raça "+listaAnimalGeral.get(i).getRaca());
+                System.out.println("Estado de saúde "+listaAnimalGeral.get(i).getEstadoSaude());
+                System.out.println("Nome do Dono: "+ listaAnimalGeral.get(i).getNomeDono());
+            }
+        }
     }
 
     public void comer(){
@@ -81,5 +90,13 @@ public class Animal {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getNomeDono() {
+        return nomeDono;
+    }
+
+    public void setNomeDono(String nomeDono) {
+        this.nomeDono = nomeDono;
     }
 }
