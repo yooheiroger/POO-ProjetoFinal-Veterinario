@@ -11,9 +11,8 @@ public class Main {
         System.out.println("1.Cadastrar cliente \n" +
                 "2.Cadastrar Animal \n" +
                 "3.Agendar consulta \n" +
-                "4.Gerar solicitação de exame \n" +
-                "5.Gerar receita médica\n" +
-                "6.Consultar animal\n");
+                "4.Agendar exame \n" +
+                "5.Consultar animal\n");
         ;
 
         int opcao = scanner.nextInt();
@@ -66,6 +65,19 @@ public class Main {
                 int duracao = scanner.nextInt();
                 System.out.println("Informe o valor da consulta: ");
                 int valor = 120 * (duracao/60);
+
+            case 4:
+                System.out.println("Agendar exame");
+                System.out.println("Informe a data para realizar o exame: ");
+                String dataExame = scanner.nextLine();
+                System.out.println("Informe o tipo de exame: ");
+                String tipoExame = scanner.nextLine();
+                System.out.println("Informe o valor deste exame: ");
+                int valorExame = scanner.nextInt();
+
+            case 5:
+                System.out.println("Consultar animal na lista: ");
+                String consultarAnimal = scanner.nextLine();
 
         }
 

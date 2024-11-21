@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Projeto Final Veterinario.iml" filepath="$PROJECT_DIR$/.idea/Projeto Final Veterinario.iml" />
       <module fileurl="file://$PROJECT_DIR$/Veterinario/Veterinario.iml" filepath="$PROJECT_DIR$/Veterinario/Veterinario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VeterinarioSistema/VeterinarioSistema.iml" filepath="$PROJECT_DIR$/VeterinarioSistema/VeterinarioSistema.iml" />
     </modules>
   </component>
 </project>

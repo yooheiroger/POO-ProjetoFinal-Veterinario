@@ -3,6 +3,7 @@ public class Cachorro extends Animal {
     private String carteiraVacina;
 
     public Cachorro(String corPelugem, String carteiraVacina){
+        super();
         this.corPelugem = corPelugem;
         this.carteiraVacina = carteiraVacina;
 

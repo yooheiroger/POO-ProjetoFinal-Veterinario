@@ -1,14 +1,14 @@
 public class Exame {
-    private int valor;
+    private int valorExame;
     private int duracao;
-    private String tipo;
-    private String data;
+    private String tipoExame;
+    private String dataExame;
 
-    public Exame(int valor, int duracao, String tipo, String data){
-        this.valor = valor;
+    public Exame(int valorExame, int duracao, String tipoExame, String dataExame){
+        this.valorExame = valorExame;
         this.duracao = duracao;
-        this.tipo = tipo;
-        this.data = data;
+        this.tipoExame = tipoExame;
+        this.dataExame = dataExame;
     }
 
     public Exame(){
