@@ -6,19 +6,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
-        // menu do sistema do veterianario
-
+        // lista de animal geral utilizada para fazer o cadastro dos animais e consulta do mesmo.
         List<Animal> listaAnimalGeral = new ArrayList<>();
 
-
-
-
-
+        // menu do sistema do veterianario
 int opcao = 0;
 do {
     System.out.println("Olá, escolha uma das opções abaixo: \n");
-    System.out.println("1.Cadastrar cliente \n" +
+    System.out.println("1.Retorno exame \n" +
             "2.Cadastrar Animal \n" +
             "3.Agendar consulta \n" +
             "4.Agendar exame \n" +
@@ -28,6 +23,10 @@ do {
   opcao = scanner.nextInt();
     switch (opcao){
             case 1:
+                System.out.println("Retorno exame");
+                System.out.println("Digite o nome do animal para verificar o exame");
+                String animalExame = scanner.next();
+
 
                 break;
             case 2:
@@ -54,9 +53,9 @@ do {
                 System.out.println("Cadastro realizado com sucesso");
 
 
-                for (int i = 0; i < listaAnimalGeral.size(); i++) {
-
-                }
+//                for (int i = 0; i < listaAnimalGeral.size(); i++) {
+//
+//                }
 
                 Animal animal1 = new Animal(nomeAnimal,tipo, raca,
                         idadeAnimal, estadoSaude, nomeDonoAnimal);
